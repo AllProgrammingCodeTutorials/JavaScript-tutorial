@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 style="color:red">
+        /**
+        * 
+        * <br/>
+        length, <br/>
+        length = 0;<br/>
+        concat(array_name) <br/>
+        pop() <br/>
+        shift() <br/>
+        push() <br/>
+        unshift() <br/>
+        splice(position,length) <br/>
+        indexOf() <br/>
+        Array.isArray <br/>
+        split() <br/>
+        join <br/>
+       *
+       *
+       */</h5>
+    
+    
+</body>
+**length, length=0 ***
+<script>
+  
+   var array_name = ["anju", "shrwda"];
+//    array_name.length=0; or array_name = []; // array will intialize with 0 , you can use both method
+   document.write(array_name);
+   document.write("<br/>");
+   document.write(array_name.length); // array length will be initalize
+   document.write("<br/>");
+   array_name.length=0;
+</script>
+
+<h4 style="color:green">**concat(array_name) function**</h4> <br/>
+<script>
+    /* concat(array_name) function 
+    */
+
+var array_name = ["anju", "shrwda"];
+var array_name2 = ["ram", "lakhan"];
+var result = array_name.concat(array_name2); 
+document.write(result);
+document.write("<br/>");
+</script>
+
+<h4 style="color:green">**pop() : pop() function will remove right side of array element ** </h4> 
+<h4 style="color:green">shift() : function will be remove left array element </h4> <br/>
+<script>
+/* concat(array_name) function 
+*/
+
+var array_name = ["anju", "shrwda", "Ram"];
+array_name.pop();
+array_name.shift();
+document.write(array_name);
+document.write("<br/>");
+</script>
+
+<h4 style="color:green">**push() :this function will push new array element ** </h4> 
+<h4 style="color:green">**unshift() :this function will push new array element in the starting index means 0 ** </h4> <br/>
+<h4 style="color:green">**splice(position,length) :this function will remove array element according to our will ** </h4> <br/>
+<script>
+/* concat(array_name) function 
+*/
+
+var array_name = ["anju", "shrwda", "Ram"];
+array_name.unshift("Aaman");
+array_name.splice(1,1) // remove anju
+document.write(array_name.indexOf("shrwda")); // this function will show the index value of array element
+document.write("<br/>");
+document.write(Array.isArray(array_name)); // this function will return true if the data is array else false
+document.write("<br/>");
+document.write(array_name);
+document.write("<br/>");
+</script>
+
+<h4 style="color:green">** split():this function will convert string into array ** </h4> <br/>
+<script>
+/* concat(array_name) function 
+*/
+
+var into = "My name is Purnima Gurung";
+var result = into.split(" ");
+document.write(result);
+// console.log(result);
+document.write("<br/>");
+</script>
+
+<h4 style="color:green">** join():this function will convert array into string ** </h4> <br/>
+<script>
+/* concat(array_name) function 
+*/
+
+var array_name = ["anju", "shrwda", "Ram"];
+var result = array_name.join(", ");
+document.write(result);
+// console.log(result);
+document.write("<br/>");
+</script>
+
+<h4 style="color:green">** example  ** </h4> <br/>
+<script>
+/* concat(array_name) function 
+*/
+
+var array_name = "anju gurung";
+var xyz = array_name.split(" ");
+document.write("welcome" + array_name[0]);
+// console.log(result);
+document.write("<br/>");
+</script>
+
+
+</html>
