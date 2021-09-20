@@ -1,0 +1,23 @@
+<script>
+    var array_name = ["anju", "Shrwda", "Rani"];
+    // for (var i=0; i<3; i++) {
+    //     document.write(array_name[i]);
+    //     document.write("<br/>");
+    // }
+
+    // array_name.forEach(function(key, value){
+    //     document.write(key);
+    //     document.write(value);
+    //     document.write("<br/>");
+    // });
+
+    // by calling function inside the Foreach loop
+
+    array_name.forEach(arrFunc);
+    function arrFunc(value, key) {
+        document.write(value);
+        document.write(key);
+        document.write("<br/>");
+
+    }
+</script>
