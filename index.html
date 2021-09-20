@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Tutorial</h1>
+    <select name="" id="">
+        <option value="">Select City</option>
+        <option value="">Kathmandu</option>
+        <option value="">pokhara</option>
+        <option value="">Butwal</option>
+    </select>
+</body>
+<script>
+    //-----------creating an array--------
+    var arr = ["Kathmandu", "pokhara", "Butwal"];
+    
+    // sorting array 
+    arr.sort();
+    var html = "<select><option>select city</option>"
+    for(var i = 0; i<2;i++);
+    {
+        html = html+"<option>"+ arr[i] + "</option>";
+    }
+    html = html +"</select>";
+    document.write(html);
+</script>
+</html>
