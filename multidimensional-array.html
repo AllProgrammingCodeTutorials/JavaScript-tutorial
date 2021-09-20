@@ -1,0 +1,26 @@
+<script>
+    // let activities = [];
+    let activities = [
+    ["Anju", "Germany"],
+    ["Shrwda", "Australia"],
+    ["Ramesh", "Nepal"]
+];
+// display above data in table
+document.write("<table border='1'>");
+document.write("<tr><td>S.No</td><td>Name</td><td>Country</td></tr>") 
+
+var k= 1;
+for (let i = 0; i<3; i++) {
+    document.write("<tr>");
+    document.write("<td>" +k+ "</td>");
+    for (var j=0; j<2; j++) {
+
+        document.write("<td>" + activities[i] [j] + "</td>");
+        document.write("<br/>");
+    }
+    k++;
+    document.write("</tr>");
+}
+document.write("</table");
+
+</script>
